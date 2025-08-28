@@ -1,5 +1,5 @@
 # import non_existent_module  # intentional break
-
+import json  # unused
 from flask import Flask, render_template
 
 
