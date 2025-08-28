@@ -7,9 +7,12 @@ def create_app():
     def home():
         return {"status": "ok", "message": "Hello CI!"}, 200
 
+    @app.get("/about")
+    def about():
+        return render_template("about.html")
+
     return app
 
-# For local run: python app.py
 if __name__ == "__main__":
     app = create_app()
     app.run(debug=True)
