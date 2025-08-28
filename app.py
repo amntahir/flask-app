@@ -1,3 +1,5 @@
+import non_existent_module  # intentional break
+
 from flask import Flask
 
 def create_app():
