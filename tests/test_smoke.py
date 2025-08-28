@@ -1,6 +1,7 @@
 import json
 from app import create_app
 
+
 def test_home_ok():
     app = create_app()
     client = app.test_client()
