@@ -1,6 +1,5 @@
-import non_existent_module  # intentional break
+from flask import Flask, render_template
 
-from flask import Flask
 
 def create_app():
     app = Flask(__name__)
@@ -14,6 +13,7 @@ def create_app():
         return render_template("about.html")
 
     return app
+
 
 if __name__ == "__main__":
     app = create_app()
